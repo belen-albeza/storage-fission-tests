@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+  <title>Embedded iframe</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Embedded iframe</h1>
+  <ul>
+    <li>Local storage:
+      <button id="local-add" type="button">Add item</button>
+      <button id="local-clear">Clear</button>
+    </li>
+  </ul>
+
+<script type="text/javascript">
+document.querySelector("#local-add").addEventListener("click", () => {
+  localStorage.setItem("lorem", "ipsum");
+});
+document.querySelector("#local-clear").addEventListener("click", () => {
+  localStorage.clear();
+});
+</script>
+</body
